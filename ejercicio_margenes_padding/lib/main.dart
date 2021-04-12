@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
  
 void main() => runApp(MyApp());
@@ -9,18 +11,25 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Margenes y Padding'),
+          //backgroundColor: Color(0xffE971D3).withOpacity(0.7),
+          shadowColor: Colors.green,
+          title: Text('Manejo de Colores', style: TextStyle(color: Colors.black))
         ),
-        body: Container(
-              width: 150,
-              height: 150,
-              color: Colors.orange,
-              child: Text('Padding', style: TextStyle(backgroundColor: Colors.black, fontSize: 20)),
-              margin: EdgeInsets.all(50),
-              //margin: EdgeInsets.fromLTRB(10, 10, 50, 10),
-              //padding: EdgeInsets.fromLTRB(10, 10, 10, 10)
-              padding: EdgeInsets.all(20),
-            ),
+        body: Center(
+          child: Container(
+            height: 250,
+            width: 250,
+            
+            //color: Colors.greenAccent
+            //color: Colors.green[100]
+            //color: Colors.indigoAccent[700]
+            //color: Color(0xffE971D3).withOpacity(0.7)
+            color: Color.fromRGBO(132, 50, 78, 0.6)
+
+          ),
+        ),
+
+
 
       ),
     );
