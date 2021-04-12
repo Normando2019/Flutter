@@ -6,6 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       title: 'Material App',
       home: MyHomePage(),
     );
@@ -14,29 +15,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   List nombres = [
-    "Mario",
-    'Luis',
-    'María',
-    'Pedro',
-    'Luis',
-    'Laura',
-    'Rosa',
-    'Claudia',
-    'FAbiola',
-    'Juan',
-    'Roberto',
-    "Mario",
-    'Luis',
-    'María',
-    'Pedro',
-    'Luis',
-    'Laura',
-    'Rosa',
-    'Claudia',
-    'FAbiola',
-    'Juan',
-    'Roberto'
-  ];
+    "Mario",'Luis','María','Pedro','Luis','Laura','Rosa','Claudia'];
 
   @override
   Widget build(BuildContext context) {
@@ -47,8 +26,6 @@ class MyHomePage extends StatelessWidget {
       body: ListView(
         children: _crearItemsCorto()
       ),
-      
-      
       
       // body: ListView.builder(
       //     itemCount: nombres.length,
