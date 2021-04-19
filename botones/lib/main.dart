@@ -58,10 +58,7 @@ class MyApp extends StatelessWidget {
                 ),
                 onPressed: () { },
                 child: Text('OutlinedButton con forma y borde personalizados'),
-              ),
-
-
-            
+              ), 
             ],
           )
         ),
